@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slikaPolaznika {
+	float:left;
+	margin:100px 10px 0 100px;
+}
+
+#slika {
+	background:url(../../images/ita/defaultSLika.gif);
+	background-repeat:no-repeat;
+	width:140px;
+	height:176px;
+	margin:0 0 8px 0;
+}
+
+#licniKarton {
+	background:none;
+	width:345px;
+	margin:0;
+	padding:0;
+	
+	float:right;
+}
+
+#licniKartonTop {
+	background:url(../../images/ita/licniKartonTop.gif);
+	background-repeat:no-repeat;
+	width:345px;
+	height:112px;
+	margin:0;
+	padding:0;
+}
+
+#licniKartonSredina {
+	background:url(../../images/ita/licniKartonSredina.gif);
+	background-repeat:repeat-y;
+	width:305px;
+	height:auto;
+	margin:0;
+	padding:20px 20px 0;
+}
+
+#licniKartonBottom {
+	background:url(../../images/ita/licniKartonBottom.gif);
+	background-repeat:no-repeat;
+	width:345px;
+	height:35px;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+#licniKarton td {
+	text-align:left;
+	font-weight:bold;
+	padding:5px 0;
+}
+
+#licniKarton td.desnotd {
+	text-align:right;
+	color:#808080;
+}
+
+#poslednjaPredavanja {
+	width:680px;
+}
+
+.poslednjaPredavanjaLevo {
+	float:left;
+	width:520px;
+	height:auto;
+}
+
+.poslednjaPredavanjaLevo p {
+	margin:0;
+}
+
+.poslednjaPredavanjaLevoTop {
+	background:url(../../images/ita/zaobljenBlokTamnijiGore.gif);
+	background-repeat:no-repeat;
+	width:520px;
+	height:7px;
+	margin:0;
+	padding:0;
+}
+
+.poslednjaPredavanjaLevoSredina {
+	background:url(../../images/ita/zaobljenBlokTamnijiSredina.gif);
+	background-repeat:repeat-y;
+	width:460px;
+	margin:0;
+	padding:10px 35px 10px 25px;
+	min-height:20px;
+	overflow:hidden;
+}
+
+.poslednjaPredavanjaLevoBottom {
+	background:url(../../images/ita/zaobljenBlokTamnijiDole.gif);
+	background-repeat:no-repeat;
+	width:520px;
+	height:7px;
+	margin:0;
+	padding:0;
+}
+
+
+.poslednjaPredavanjaDesno {
+	float:right;
+	width:150px;
+	font-weight:bold;
+}
+
+.poslednjaPredavanjaDesnoTop {
+	background:url(../../images/ita/zaobljenBlokSvetlijiGore.gif);
+	background-repeat:no-repeat;
+	width:150px;
+	height:7px;
+	margin:0;
+	padding:0;
+}
+
+.poslednjaPredavanjaDesnoSredina {
+	background:url(../../images/ita/zaobljenBlokSvetlijiSredina.gif);
+	background-repeat:repeat-y;
+	width:300px;
+	margin:0;
+	padding:0 10px;
+}
+
+.poslednjaPredavanjaDesnoBottom {
+	background:url(../../images/ita/zaobljenBlokSvetlijiDole.gif);
+	background-repeat:no-repeat;
+	width:150px;
+	height:7px;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+/*tabela bez okvira i sl.*/
+
+
+#detalji, #detalji td, #detalji th, #detalji tr {
+	background:none;
+	border:none;
+}
+
+#detalji {
+	border-top: 2px solid #e31b23;
+}
+
+
+
+
+.predavanje {
+	background-color:#fff;
+	border:1px solid #E6E6E6;
+	padding:3px 10px;
+	margin:10px 0;
+}
+
+.predavanjeNaslov {
+	margin:6px 0 6px 4px;
+	color:#333;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.predavanjaPomocni {
+	margin:8px 6px 2px 0;
+	overflow: hidden;
+}
+
+.opisPredavanja {
+	margin: 0px 0 6px 4px;
+	color:#333;
+	font-size:10px;
+	overflow: hidden;
+}
+
+.predavanjaKurs {
+ margin:6px 0 6px 4px;
+ color:#666;
+ font-size:13px;
+ font-weight:normal;
+}
+
+.lista-nivo-prvi {
+	list-style-type: disc;
+}
+
+.list-nivo-drugi {
+	list-style-type: lower-alpha;
+	margin: 0px 0px 0px 10px;
+}
+
+.podmeni {
+	margin: 15px;
+	padding: 10px;
+	background: url(../../pic/crnaStrelica.png) no-repeat;
+	background-position: 0% 50%;
+}
+
+#tblSkripte {
+	width:99%;
+}
+
+#tblSkripte tr {
+	border-bottom:1px dashed #ccc;
+}
+
+#tblSkripte td {
+	padding:6px 0 2px;
+}
+
+#tblSkripte tr.naslov {
+	background: #eee;
+	border-bottom:1px dashed #ccc;
+}
+
+#tblSkripte td.podStavka {
+ padding-left:10px;
+} 
+
+.ui-widget-header {
+	background: 0;
+	background-color: #001A33;	
+}
+
+.ui-widget {
+	font-weight: bold;
+}
+
+#dbTekstInfo .value {
+	width: 200px;
+	text-align: left;
+}
+
+#selectMonth {
+	font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    margin-left: 83px;
+    margin-top: 3px;
+}
+#selectYear {
+	margin-right: 103px;
+        font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+}
+
+#dbTekstInfo {
+width: 300px;
+margin: 17px 0 0 0;
+overflow: hidden;
+}
+
+#dbFotoPredavac {
+margin: 17px 0 0 0;
+overflow: hidden;
+width: 300px;
+}
+
+#dbFotoPredavac img {
+width:120px;
+height:145px;
+}
+
+#dbFotoSala {
+float: right;
+overflow: hidden;
+width: 200px;
+}
+
+#dbFotoSala img {
+width:200px;
+height:300px;
+}
+
+#opis {
+}
+
+.item {
+background-color: #BDD8DA;
+padding: 5px;
+}
+
+.item2 {
+background-color: #DFEFF0;
+padding: 5px;
+}
+
+#mycal {
+    width: 100%;
+    text-align: center;
+}
+
+#example { 
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 6px 6px 6px #CCCCCC;
+    margin: 5px auto auto;
+}
+html>body #predavanje {
+    height: auto !important;
+    width: auto !important;
+    min-height: 220px !important;
+    min-width: 550px !important;
+   
+}
+#toolbar {
+    position: relative;
+    height: 31px;
+}
+#BtnPreviousMonth {
+    position: absolute;
+    left: 3px;
+}
+#BtnNextMonth {
+    position: absolute;
+    left: 554px;
+}
+.vezbeNaslov {
+    border: 1px solid #CCCCCC;
+    color: grey;
+    padding: 3px 6px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.vezbeNaslov:hover {
+    cursor: pointer;
+    background: white;
+}

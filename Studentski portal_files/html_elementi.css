@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*tipografija*/
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+	font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+	font-size:11px;
+	color:#333;
+}
+
+p {
+	margin:0 0 10px 0;
+}
+
+h1 {
+	font-size: 19px;
+    margin:2px 0 10px 0;
+	font-weight:bold;
+}
+
+h2 {
+	font-size: 14px;
+    margin:10px 0 10px 0;
+	font-weight:bold;
+}
+
+h3 {
+	font-size: 12px;
+    margin:10px 0 10px 0;
+	font-weight:bold;
+}
+
+h4, h5, h6 {
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:none;
+}
+	
+	
+	
+/*linkovi*/
+
+a:link {
+	color:#666;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#666;
+}
+
+a:hover,
+a:focus {
+	color:#e31b23;
+	text-decoration:none;
+}
+
+a:active {
+	color:#666;
+	text-decoration:none;
+}
+
+
+
+
+#leviSidebar a:link {
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+#leviSidebar a:visited {
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+#leviSidebar a:hover,
+#leviSidebar a:focus {
+	color:#e31b23;
+	text-decoration:none;
+}
+
+#leviSidebar a:active {
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+/*naslovi*/
+
+.title {
+	color:#e31b23;
+}
+
+/*tabele*/
+
+
+.tabelaOkvir table, .tabelaOkvir  td, .tabelaOkvir  th {
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	padding:4px;
+}
+
+.tabelaOkvir td {
+	background:#fff;
+}
+
+.tabelaOkvir th {
+	background:#e31b23;
+	color:#FFF;
+	padding:10px 3px;
+	font-weight:bold;
+}
+	
+	
+.tabelaBezOkvira  th {
+	border:none;
+	border-collapse:collapse;
+	padding:10px 4px;
+}
+
+.tabelaBezOkvira table, .tabelaBezOkvira  td {
+	border:none;
+	border-collapse:collapse;
+	padding:6px 4px;
+}
+
+.tabelaBezOkvira td {
+	background:none;
+}
+
+.tabelaBezOkvira th {
+	border-bottom:1px solid #666;
+	background:none;
+	}
+	
+	
+table, td, th, tr {
+	border:none;
+	border-collapse:collapse;
+	}
+	
+	
+/* dodatak 2015/10 */
+
+.tabelaOkvir tr:nth-of-type(2n) td {
+	background:#eee;
+}
+
+.tabelaManja tr:nth-of-type(2n) td {
+	background:#FFF;
+}
+
+.tabelaManja tr:nth-of-type(2n-1) td {
+	background:#eee;
+}
+
+.tabelaManja th {
+	background:#888888;
+}

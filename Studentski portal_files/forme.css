@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+input, textarea {
+	display:block;
+}
+
+input.text {
+	background:url(../../images/ita/input.png);
+	background-repeat:repeat-x;
+	background-position:top left;
+	border:none;
+	padding:4px;
+	color:#FFF;
+	font-weight:bold;
+	display:block;
+	width:132px;
+}
+
+input.button{
+	background:url(../../images/ita/button.gif);
+	background-repeat:no-repeat;
+	background-position:top left;
+	margin:5px 0;
+	padding:0 0 3px 0;
+	border:none;
+	width:70px;
+	height:18px;
+	display:inline;
+	font-size:9px;
+	font-weight:normal;
+	color:#333;
+}
+
+input.button:hover {
+	background:url(../../images/ita/button.gif);
+	background-repeat:no-repeat;
+	background-position:0px -18px;
+}
+
+input.button:active {
+	background:url(../../images/ita/button.gif);
+	background-repeat:no-repeat;
+	background-position:0px -36px;
+}

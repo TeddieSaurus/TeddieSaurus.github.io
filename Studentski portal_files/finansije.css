@@ -1,0 +1,298 @@
+@import "reset.css";
+	
+	ol.lista-nivo {
+		margin-left: 4px;
+	}
+	
+	ol.lista-nivo li {
+		list-style-image:none;
+		list-style-position:inside;
+		list-style-type:disc;
+	}
+	
+	ol.lista-prvi-nivo {
+		margin-left:4px;
+	}
+	
+	ol.lista-drugi-nivo {
+		margin-left: 8px;
+	}
+	
+	ol.lista-prvi-nivo li {
+		list-style-image:none;
+		list-style-position:inside;
+		list-style-type:decimal;
+	}
+	
+	ol.lista-drugi-nivo li {
+		list-style-image:none;
+		list-style-position:inside;
+		list-style-type:lower-alpha;
+	}
+	
+/*Trougao u desnom dnu ekrana*/
+#fixme {
+	/* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+ 	position: fixed; right: 0px; bottom: 0px;
+ 	width: 80px;
+	height: 80px;
+	background-image: url("../pic/pitanje.gif");
+	background-repeat: no-repeat;
+}
+body > div#fixme {
+	/* used by Opera 5+, Netscape6+/Mozilla, Konqueror, Safari, OmniWeb 4.5+, iCab, ICEbrowser */
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+#fixme a {
+	display: block;
+	height: 80px;
+	width: 80px;
+}
+
+#pitanjeOkvir {
+	width: 382px;
+	height: 303px;
+	padding: 0 20px;
+	margin: 0;
+	
+	background-image: url("../pic/formaPitanje.jpg");
+}
+
+#pitanjeOkvir h5 {
+	font-size: 11px;
+	padding: 12px 0 0 0;
+	margin: 0;
+	float: left;
+}
+
+#pitanjeOkvir p {
+	font-size: 11px;
+	padding: 0;
+	margin: 5px 0 2px 0;
+	clear: both;
+}
+
+#pitanjeOkvir .field {
+	width: 380px;
+}
+
+#pitanjeOkvir textarea.field {
+	height: 105px;
+}
+
+#pitanjeOkvir .pitanjeLogoTop {
+	float: right;
+	padding: 12px 0;
+	margin: 0;
+}
+
+#pitanjeOkvir .bottom { /*float: right;
+	clear: right;
+	width: 380px;
+	padding:0;
+	margin:15px 0 0 0;	*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 13px 0;
+	width: 420px;
+}
+
+#pitanjeOkvir .pitanjeLogoBottom {
+	float: left;
+	font-size: 9px;
+	padding: 0;
+	margin: 0;
+}
+
+#pitanjeOkvir .pitanjeLogoBottom img {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+#pitanjeOkvir .pitanjeLogoBottom span.copy {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#pitanjeOkvir .bottomText {
+	float: right;
+	margin: 0;
+	font-size: 9px;
+	margin: 0 0 0 0;
+	padding: 0 20px 0 0;
+	width: 170px;
+	text-align: right;
+}
+
+#pitanjeOkvir input.dugmePitanje {
+	/*background-image: url("../pic/formaPDugme.jpg");*/
+	background-image: url("../pic/dugme.jpg");
+	background-color: red;
+	width: 118px;
+	height: 27px;
+	clear: both;
+	float: right;
+	margin: 8px 0 0 0;
+	border: 0px;
+	border-style: none;
+	cursor: pointer;
+}
+
+/* kraj dela za feedback*/
+
+	#prikazdugovanja{
+	display: none;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	}
+	#okvirtabela{
+		font-family:Verdana,Arial,Helvetica,sans-serif;
+		font-size:10px;
+	}
+	#tabelafinansijegore{
+		width: 530px;
+		height: 25px;
+		margin-left: 9px;
+		margin-right:9px;
+		/*background-color: #E31A22;*/
+		color:#FFFFFF;
+		font-weight:bold;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #000000;
+	}
+	#tabelafinansijegore td {
+		height:27px;
+	} 
+	#tabelafinansijedetalji{
+		width: 530px;
+		margin-left: 9px;
+		text-align: right;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #000000;
+	}
+	#tabelafinansijedetalji td{
+		height: 20px;
+	}
+	#tabelafinansijeposlednjepromene{
+		width: 530px;
+		height: 20px;
+		margin-left: 9px;
+		margin-right:9px;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-left-color: #000000;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-right-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #000000;		
+		font-size:12px;
+	}
+	#tabelafinansijetransakcijeheader{
+		width: 530px;
+		height: 20px;
+		margin-left: 9px;
+		margin-right:9px;
+		border-style: solid;
+		border-width: 1px;
+		background-color: #E4E5E9;
+		font-size:12px;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-left-color: #000000;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-right-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #000000;
+	}
+	#tabelafinansijetransakcijepodaci{
+		width: 530px;
+		height: 20px;
+		margin-left: 9px;
+		margin-right:9px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #000000;
+	}
+	#tabelafinansijetransakcijepodaci td{
+		border-bottom : solid;
+		border-width: 1px;
+		height: 25px;
+	}
+	.sredina{
+		margin-right: 120px;
+	}
+	.spanpadding{
+	padding-left: 10px;
+	}
+	#tabeladugovanja{
+		width: 390px;
+		height: 20px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #000000;
+	}
+	#tabeladugovanja th{
+		height: 20px;
+		border-bottom: solid;
+		border-width: 1px;
+		background-color: #E4E5E9;
+		font-size:12px;
+	}	
+	#tabeladugovanja td{
+		border-bottom : solid;
+		border-width: 1px;
+		height: 20px;
+		
+	}
+	#tabelastavkiracuna{
+		height: 20px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #000000;
+	}
+	#tabelastavkiracuna th{
+		height: 20px;
+		border-bottom: solid;
+		border-width: 1px;
+		background-color: #E4E5E9;
+		font-size:12px;
+	}	
+	#tabelastavkiracuna td{
+		border-bottom : solid;
+		border-width: 1px;
+		height: 20px;
+		
+	}
+	.ucitavanje{
+		margin-left: 150px;
+		margin-right:50px;
+		font-family:Verdana,Arial,Helvetica,sans-serif;
+		font-size:14px;
+	}
+	.ajaxloadsredina{
+		padding-left: 270px;
+	}
+	.spanright{
+	padding-left: 35px;
+	}
+	
+	/*povecan font na prijavi ispita*/
+	.fs-11 {
+    font-size:11px;
+	}
+
+
+	
+	
+	

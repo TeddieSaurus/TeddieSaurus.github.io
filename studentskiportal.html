@@ -1,0 +1,391 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)file:///D:/Downloads/Studentski%20portal.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+
+
+	<title>Studentski portal</title>
+	<meta name="keywords" content="uis online,Studentski portal">
+	<meta name="description" content="opis sajta">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" href="https://v2.link-onlineservice.com/application/views/uis-online/images/favicon.ico" type="image/x-icon">
+	<link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://v2.link-onlineservice.com/its/feed/">
+<script async="" src="./Studentski portal_files/fbevents.js.download"></script><script async="" src="./Studentski portal_files/gtm.js.download"></script><script async="" src="./Studentski portal_files/fbevents.js(1).download"></script><script async="" src="./Studentski portal_files/gtm.js(1).download"></script><script src="./Studentski portal_files/Chart.bundle.js.download" type="text/javascript"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+       <!-- <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>-->
+			<link rel="stylesheet" href="./Studentski portal_files/jquery-ui.css" type="text/css" media="screen" charset="utf-8">
+
+			<link rel="stylesheet" href="./Studentski portal_files/forme.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="./Studentski portal_files/finansije.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="./Studentski portal_files/html_elementi.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="./Studentski portal_files/raspored.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="./Studentski portal_files/ostalo.css" type="text/css" media="screen" charset="utf-8">
+
+
+			<script src="./Studentski portal_files/jquery.js.download" type="text/javascript"></script>
+			<script src="./Studentski portal_files/jquery.blockUI.js.download" type="text/javascript"></script>
+			<script src="./Studentski portal_files/jquery-ui.js.download" type="text/javascript"></script>
+			<script src="./Studentski portal_files/prikaziStranicu.js.download" type="text/javascript"></script>
+
+
+
+<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="css/its/ie6.css" />
+<![endif]-->
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/its/ie7.css" />
+<![endif]-->
+
+<!--[if gte IE 5.5]>
+	<![if lt IE 7]>
+		<style type="text/css">
+			div#fixme {
+				position: absolute;
+				/* IE5.5+/Win - this is more specific than the IE 5.0 version */
+				right: auto;
+				bottom: auto;
+				left: expression( ( -0 - fixme.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+				top: expression( ( -0 - fixme.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+			}
+		</style>
+	<![endif]>
+<![endif]-->
+<!-- Google Tag Manager -->
+
+<script>
+
+	$(document).ready(function() {
+
+		menu_status = new Array();
+
+		url = "licniKarton";
+		if(url != "") {
+			link = $("a[href*="+url+"]");
+
+			var event = jQuery.Event("click");
+			link.trigger(event);
+		}
+
+	});
+
+	function otvoriProzorPitanje() {
+		var width  = 422;
+		var height = 299;
+		var left   = (screen.width  - width)/2;
+		var top    = (screen.height - height)/2;
+		var params = 'width='+width+', height='+height;
+		params += ', top='+top+', left='+left;
+		params += ', resizable=no';
+		window.open('./its/postaviPitanje','PostavitePitanje',params);
+	}
+
+	function menu(id) {
+		$("#" + id + " ul").slideToggle("fast");
+//		if(menu_status[id] == "true") {
+//			menu_status[id] = "false";
+//
+//			$("#" + id).css("list-style-image", "url(./images/its/pozadinaNavNaslovBULLETdown.png)");
+//			$("#" + id + " ul").slideDown("slow");
+//		}
+//		else {
+//			menu_status[id] = "true";
+//
+//			$("#" + id).css("list-style-image", "url(./images/its/pozadinaNavNaslovBULLETdown.png)");
+//			$("#" + id + " ul").slideUp("slow");
+//		}
+	}
+
+	$(document).ready(function() {
+		$("#odjaviSlika").click(function() {
+			blockUI();
+
+			$("#centralni").html("<div style='width: 100%; height: 150px; text-align: center; padding-top: 150px;'><img src='./pic/ajax/ajax-loader.gif'></div>");
+
+	        var href = "https://v2.link-onlineservice.com/its/services/logout/";
+	        $.ajax({
+				type: "POST",
+				url: href,
+				success: function(response){
+	        		window.location = response;
+	        		return;
+				}
+			});
+		});
+	});
+
+
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9VD7BH');</script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Studentski portal_files/f.txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(1).txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(2).txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(3).txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(4).txt"></script>
+<!-- End Google Tag Manager -->
+
+<script>
+
+</script>
+
+
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Studentski portal_files/f(5).txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(6).txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(7).txt"></script><script type="text/javascript" async="" src="./Studentski portal_files/f(8).txt"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+<body data-new-gr-c-s-check-loaded="14.1113.0" data-gr-ext-installed="">
+<div id="osnovni">
+
+
+
+	<style>
+		.ui-widget-overlay { background: #000; opacity:0.7; filter:alpha(opacity=70); }
+		.ui-widget-content { background: #F8F8F8; }
+	</style>
+
+	<script>
+		</script>
+
+	<div id="osnovniUnutrasnji">
+		<div id="header">
+            <!-- <div id="logo">
+       	    	<img src="https://v2.link-onlineservice.com//application/views/uis-online/images/its/logo.png" width="326" height="67" alt="ITS" />
+            </div> -->
+			<div id="logo">
+       	    	<img style="display:block" src="./Studentski portal_files/logo.png" width="326" height="67" alt="ITS">
+								<a target="_blank" style="display:block; margin-top:15px; font-size:14px" href="https://www.its.edu.rs/dls">Platforma za podršku učenju &gt;&gt;&gt;</a>
+				            </div>
+            <div id="headerSlika">
+            	<img src="./Studentski portal_files/headerSlika.gif" width="336" height="87" alt="ITS">
+            </div>
+            <div id="logInForma">
+                <div id="odjaviSlika"><a href="javascript: "><img src="./Studentski portal_files/odjavi.png" width="34" height="34" alt="odjavi me"></a></div>
+                <div id="ImePrezime">
+					Dušan Vojinović				</div>
+                <div id="rBroj">Reg br. <span>44/14</span></div>
+            </div>
+
+            <br class="clearfloat">
+        </div><!-- #header -->
+
+	<div id="glavniSadrzaj"><div id="leviSidebar">
+
+				<ul>
+
+			<li class="menu" id="menu_531">
+			<span onclick="menu(&#39;menu_531&#39;)">Informacije</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/obrazac" target="">ŠV obrazac</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/najcesca-pitanja/" target="">Najčešće postavljana pitanja </a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/zakazite-vas-termin-u-studentskoj-sluzbi/" target="">Zakažite Vaš termin u Studentskoj službi</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/cet-komunikacija-sa-studentskom-sluzbom/" target="">Čet-komunikacija sa Studentskom službom</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/vazna-obavestenja/" target="">Važna obaveštenja</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/kratak-recnik-studiranja/" target="">Kratak rečnik studiranja</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/podelite-svoje-uspehe/" target="">Podelite svoje uspehe sa nama</a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_36">
+			<span onclick="menu(&#39;menu_36&#39;)">Nastava</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/materijaliSaPredavanja" target="">Materijali sa predavanja</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/kalendarPredavanja" target="">Raspored časova i kolokvijuma</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/kalendar-nastave-2/" target="">Kalendar nastave</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/informacije-o-predmetima-2/" target="">Informacije o predmetima </a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/mentorStudenta" target="">Nastavnik mentor</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/skripte-1/" target="">Skripte </a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_43">
+			<span onclick="menu(&#39;menu_43&#39;)">Ispiti</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledPrijavaIspitaNova" target="">Prijava ispita</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledRasporedIspita" target="">Raspored ispita po datumima</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledRasporedPolaganjaIspita" target="">Raspored polaganja ispita NEW</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledIspita" target="">Položeni ispiti</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledPoenaSaIspitaKurs" target="">Pregled poena sa ispita</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledIspita/index/0" target="">Pregled nepoloženih ispita</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledIspita/index/2" target="">Pregled predispitnih obaveza </a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledPoenaSaIspita" target="">Poeni ispita iz dva dela</a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_50">
+			<span onclick="menu(&#39;menu_50&#39;)">Finansije</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledFinansija" target="">Pregled finansija</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/cenovnik-ostalih-usluga-7/" target="">Cenovnik ostalih usluga</a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_53">
+			<span onclick="menu(&#39;menu_53&#39;)">Biblioteka</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledBiblioteka" target="">Pregled biblioteke</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/ebrary/" target="">Online biblioteka Ebook Central</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/pregledBiblioteka/zaduzeneKnjige" target="">Zadužene knjige</a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_55">
+			<span onclick="menu(&#39;menu_55&#39;)">Dokumentacija</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/uputstva-1/" target="">Opšta uputstva</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/strucna-praksa/" target="">Stručna praksa</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/zavrsni-rad-1/" target="">Završni / Master rad</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/molbe/" target="">Molbe</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/pravila-studija/" target="">Pravilnici</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/pravila-za-upis-u-narednu-godinu-202021/" target="">Pravila za upis u II i III godinu</a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_59">
+			<span onclick="menu(&#39;menu_59&#39;)">Moj nalog</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/licniKartonStudenta/" target="">Lični karton</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/services/promenaLozinke" target="">Promena lozinke</a>
+                    		</li>
+	                        <li><a class="mali-link" href="http://mail.google.com/a/its.edu.rs" target="">Webmail</a>
+                    		</li>
+		</ul>
+			</li>
+
+			<li class="menu" id="menu_63">
+			<span onclick="menu(&#39;menu_63&#39;)">Kontakt</span>
+				<ul>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/pitaj-studentsku-sluzbu-2/" target="">Pitaj studentsku službu</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/pitaj-finansijsku-sluzbu-1/" target="">Pitaj finansijsku službu</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/pitaj-tehnicku-podrsku/" target="">Pitaj tehničku podršku</a>
+                    		</li>
+	                        <li><a class="mali-link" href="https://v2.link-onlineservice.com/its/savetnik-za-pomoc-u-ucenju-4/" target="">Savetnik za pomoć u učenju</a>
+                    		</li>
+		</ul>
+			</li>
+				</ul>
+	</div><!-- #leviSidebar -->
+
+		<div id="centralni">
+<div id="right">
+    &nbsp;<br>
+        <h1 class="title">Pregled poena sa ispita za Junski ispitni rok</h1>
+    <div class="tabelaOkvir">
+        <table cellspacing="0" cellpadding="0" border="0" width="640">
+            <thead>
+                <tr>
+                    <th>RB</th>
+                    <th>Naziv</th>
+                    <th>Poeni</th>
+                    <th>Ocena</th>
+                </tr>
+            </thead>
+
+
+
+                    <tbody><tr>
+                        <td align="center" class="">1.</td>
+                        <td align="left">Pravo u elektronskom poslovanju</td>
+                        <td align="center" class="">61</td>
+                        <td align="center" class="">6</td>
+                    </tr>
+
+                        </tbody></table>
+    </div>
+    </div>
+
+			</div><!-- #centralni -->
+        	<br class="clearfloat">
+
+        </div><!-- #glavniSadrzaj -->
+
+    <div id="footer">
+    	Copyright © LINK group 2009. Izrada LINK group 1998-2023. <a href="https://www.its.edu.rs/privatnost-korisnika/" target="_new">Politika privatnosti</a>
+    </div><!-- #footer -->
+
+	</div><!-- #osnovniUnutrasnji -->
+
+</div><!-- #osnovni -->
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1790362424547385");</script>
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","969349783165598");</script>
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1790362424547385");</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","221196811637925");</script><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","221196811637925");</script><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1339903196041833");</script>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1790362424547385");</script>
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","969349783165598");</script>
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1790362424547385");</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","221196811637925");</script><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","221196811637925");</script><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1339903196041833");</script>
+</body></html>

@@ -1,0 +1,141 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:#f7f8f9;
+	margin:0;
+	padding:0;
+}
+
+
+
+#osnovni {
+	width:960px;
+	margin:0 auto;
+	padding:0;
+}
+
+#osnovniUnutrasnji {
+	margin:20px 0;
+	padding:0;
+}
+
+#header {
+}
+
+#header #logo {
+	float:left;
+	padding:0 10px;
+}
+
+#header #headerSlika {
+	float:left;
+	padding:0 10px;
+}
+
+#header #logInForma {
+	float:right;
+	width:240px;
+	text-align:right;
+	margin:10px 0;
+	padding:0 0 0 10px;
+	color:#666;
+}
+
+#header #logInForma #odjaviSlika {
+}
+
+#header #logInForma #ImePrezime {
+	font-size:18px;
+	font-weight:bold;
+}
+
+#header #logInForma #rBroj {
+	font-size:12px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+#glavniSadrzaj {
+	margin:30px 0;
+}
+
+#leviSidebar {
+	float:left;
+	width:250px;
+	padding:0 10px 0 0;
+	margin:0;
+}
+
+#leviSidebar ul {
+	margin:0;
+	padding:0;
+}
+
+#leviSidebar ul li {
+	list-style-image:url(../../images/its/pozadinaNavNaslovBULLETdown.png);
+	list-style-position:inside;
+	background:url(../../images/its/pozadinaNavNaslov.png);
+	background-repeat:repeat-x;
+	color:#FFFFFF;
+	font-size:12px;
+	padding-bottom: 3px;
+	font-weight:bold;
+}
+
+#leviSidebar ul li span {
+	cursor: pointer;
+}
+
+#leviSidebar ul li ul {
+	margin:8px 0 0 0;
+}
+
+#leviSidebar ul li ul li {
+	list-style-image:url(../../images/its/pozadinaNavNaslovBULLETdown2.png);
+	background-image:none;
+	background-color:#FFF;
+	margin:2px 0 0;
+	padding:3px 0 3px 22px;
+	color:#4d4d4d;
+	font-size:11px;
+	font-weight:normal;
+}
+
+
+
+
+
+
+
+
+#centralni {
+	float:right;
+	width:680px;
+	text-align:justify;
+}
+
+
+
+
+.clearfloat { /*poravnjanje svih divova*/
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+
+
+
+#footer {
+	margin:20px 0 0 0;
+	font-size:9px;
+	text-align:left;
+}

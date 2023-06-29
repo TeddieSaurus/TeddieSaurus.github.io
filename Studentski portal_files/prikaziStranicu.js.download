@@ -1,0 +1,58 @@
+// $(document).ready(function(){         
+//	//$("#sidebarmenu a").live("click",(function(event){
+//	  $("#leviSidebar a").live("click",(function(event){
+//		event.preventDefault();
+//		
+//		var url = $(this).attr('href');
+//		var filename = url.substring(url.lastIndexOf('/')+1);
+//		
+//		if (filename=='itawebmail.html'){window.open("http://mail.google.com/a/it-akademija.com");}
+//		else if (filename=='itswebmail.html'){window.open("http://mail.google.com/a/its.edu.rs");}
+//		else if (filename=='forum.html'){window.open("http://www.its.edu.rs/forum");}
+//		else if (filename=='testovizavezbanje.html'){window.open("http://www.its.edu.rs/navigacija.php?IDStranicaPodaci=505&jezik=&lt;jezik&gt;");}
+//		else if (filename=='bahome.html'){window.open("http://www.biznis-akademija.com");}
+//		else if (filename=='itahome.html'){window.open("http://www.it-akademija.com");}
+//		else if (filename=='itshome.html'){window.open("http://www.its.edu.rs");}
+//		else
+//		{
+//			if($(this).attr("target") == "_new") {window.open($(this).attr('href')); return;}
+//			if($(this).attr("href").match(/(pdf|doc|docx)$/i) != null) {window.open($(this).attr('href')); return;}
+//			
+//			blockUI();
+//	 
+//			$("#centralni").html("<div style='width: 100%; height: 150px; text-align: center; padding-top: 150px;'><img src='./pic/ajax/ajax-loader.gif'></div>");
+//			
+//	        href = $(this).attr('href');
+//	        $.ajax({
+//				type: "POST",
+//				url: href,
+//				success: function(response){
+//	        		unblockUI();
+//					$('#centralni').html(response);
+//				}
+//			});
+//			tb_init('a.thickbox, area.thickbox, input.thickbox');//pass where to apply thickbox
+//		}
+//	}));
+//	 });  
+// 
+ function blockUI() {
+	 $.blockUI.defaults.css = {}
+		$.blockUI({ 
+			//message: "<div style='width: 100%;'><img src='./pic/ajax/new-ajax-loader.gif'></div>",
+			message: "",
+			css: { 
+	            border: 'none', 
+	            padding: '15px', 
+	            backgroundColor: '#000', 
+	            '-webkit-border-radius': '10px', 
+	            '-moz-border-radius': '10px', 
+	            opacity: .1, 
+	            color: '#fff'
+         }
+		});
+ }
+ 
+ function unblockUI() {
+	 setTimeout($.unblockUI, 1);  
+ }
